@@ -23,27 +23,25 @@ Write an efficient algorithm for the following assumptions:
 
 N is an integer within the range [1..2,147,483,647].
  */
-export default function BinaryGap(N) {
-    let numArray = N.toString(2).split('')
 
-    let oneIndexes = []
-    for (let i = 0; i < numArray.length; i++) {
-        if (numArray[i] === '1') {
-            oneIndexes.push(i)
-        }
-    }
+import BinaryGap from './BinaryGap'
 
-    if (oneIndexes.length < 2) {
-        return 0
-    }
+test('BinaryGap: number 529 contains binary gap of max length is 4', () => {
+    expect(BinaryGap(529)).toBe(4)
+})
 
-    let nums = []
-    for (let i = 0; i < oneIndexes.length; i++) {
-        if (oneIndexes[i + 1]) {
-            const diff = oneIndexes[i + 1] - oneIndexes[i] - 1
-            nums.push(diff)
-        }
-    }
+test('BinaryGap: number 20 contains binary gap of max length is 1', () => {
+    expect(BinaryGap(20)).toBe(1)
+})
 
-    return Math.max.apply(null, nums)
-}
+test('BinaryGap: number 9 contains binary gap of max length is 2', () => {
+    expect(BinaryGap(9)).toBe(2)
+})
+
+test('BinaryGap: number 32 contains binary gap of max length is 0', () => {
+    expect(BinaryGap(32)).toBe(0)
+})
+
+test('BinaryGap: number 15 contains binary gap of max length is 0', () => {
+    expect(BinaryGap(15)).toBe(0)
+})
