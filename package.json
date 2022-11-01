@@ -1,0 +1,25 @@
+{
+  "name": "codility-challenge",
+  "version": "1.0.0",
+  "description": "A project which solve the codility problem with js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duke-git/codility-challenge.git"
+  },
+  "keywords": [
+    "codility",
+    "js",
+    "datastructure",
+    "algorithm"
+  ],
+  "author": "dudaodong@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duke-git/codility-challenge/issues"
+  },
+  "homepage": "https://github.com/duke-git/codility-challenge#readme"
+}
