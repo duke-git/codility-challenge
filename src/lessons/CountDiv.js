@@ -1,6 +1,8 @@
 /**
  * https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
+ * 
  * Compute number of integers divisible by k in range [a..b].
+ * 
  * Write a function:
 
 class Solution { public int solution(int A, int B, int K); }
