@@ -17,7 +17,7 @@
 
 ## Test
 
--   Run command `npm run test` will use jest lib to
+-   Run command `npm run test` will use jest lib to test all case items in *.test.js file.
 
 ## Index
 
